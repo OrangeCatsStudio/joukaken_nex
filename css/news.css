@@ -1,0 +1,128 @@
+body{
+    font-family: YakuHanJP, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", Meiryo, sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    margin-right:20px;
+    margin-left: 20px;
+    margin-top:10px;
+    margin-bottom:10px;
+    align-items: center;
+    border-bottom: 3px solid #000;
+}
+
+b{
+    font-weight:bold;
+}
+
+header h1{
+    font-size:30px;
+}
+
+header nav ul{
+    display: flex;
+}
+
+header nav ul li a{
+    
+    font-size: 25px;
+    margin-left: 20px;
+    text-align: center;
+}
+
+header nav ul li a:hover{
+    text-decoration:underline;
+}
+
+.article_title{
+    font-size:40px;
+    margin-left:25px;
+    font-weight: bold;
+}
+
+.date{
+    font-size:14px;
+    margin-left: 25px;
+    color:#666666;
+}
+
+.main_text{
+    margin-top:16px;
+    margin-bottom:16px;
+    margin-left:25px;
+    margin-right:25px;
+    font-size: 17px;
+}
+
+.section_title{
+    font-size:30px;
+    margin-left:25px;
+    font-weight:bold;
+    padding: 0.4em 0.5em;/*文字の上下 左右の余白*/
+    color: #494949;/*文字色*/
+    background: #f4f4f4;/*背景色*/
+    border-left: solid 5px #7db4e6;/*左線*/
+    border-bottom: solid 3px #d7d7d7;/*下線*/
+}
+
+.copy{
+    justify-content: center;
+    text-align: center;
+    background: #808080;
+    color:#fff;
+    font-size: 12px;
+    padding: 7px 0 3px;
+}
+
+/*スライドの矢印の設定*/
+
+/*戻る、次へ矢印の位置*/
+.slick-prev, 
+.slick-next {
+    position: absolute;/*絶対配置にする*/
+    top: 42%;
+    cursor: pointer;/*マウスカーソルを指マークに*/
+    outline: none;/*クリックをしたら出てくる枠線を消す*/
+    border-top: 2px solid #666;/*矢印の色*/
+    border-right: 2px solid #666;/*矢印の色*/
+    height: 15px;
+    width: 15px;
+}
+
+.slick-prev {/*戻る矢印の位置と形状*/
+    left: -4.5%;
+    transform: rotate(-135deg);
+}
+
+.slick-next {/*次へ矢印の位置と形状*/
+    right: -4.5%;
+    transform: rotate(45deg);
+}
+
+/*ドットナビゲーションの設定*/
+
+.slick-dots {
+    text-align:center;
+	margin:20px 0 0 0;
+}
+
+.slick-dots li {
+    display:inline-block;
+	margin:0 5px;
+}
+
+.slick-dots button {
+    color: transparent;
+    outline: none;
+    width:8px;/*ドットボタンのサイズ*/
+    height:8px;/*ドットボタンのサイズ*/
+    display:block;
+    border-radius:50%;
+    background:#ccc;/*ドットボタンの色*/
+}
+
+.slick-dots .slick-active button{
+    background:#333;/*ドットボタンの現在地表示の色*/
+}

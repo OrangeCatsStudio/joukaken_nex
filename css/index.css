@@ -1,0 +1,132 @@
+body{
+    font-family: YakuHanJP, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", Meiryo, sans-serif;
+}
+
+.start {
+	background: #FFF;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 9000;
+    text-align: center;
+}
+.start p {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	display: none;
+	z-index: 9999;
+	width: 720px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    margin-right:20px;
+    margin-left: 20px;
+    margin-top:10px;
+    margin-bottom:10px;
+    align-items: center;
+    border-bottom: 3px solid #000;
+}
+
+header h1{
+    font-size:30px;
+}
+
+header nav ul{
+    display: flex;
+}
+
+header nav ul li a{
+    
+    font-size: 25px;
+    margin-left: 20px;
+    text-align: center;
+}
+
+header nav ul li a:hover{
+    text-decoration:underline;
+}
+
+.top_image_container{
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 55px;
+    width:726px;
+    height:411px;
+}
+
+.top_image{
+    width: 720px;
+    height: 405px;
+    border: 3px solid #000;
+}
+
+.top_image img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.copy{
+    justify-content: center;
+    text-align: center;
+    background: #808080;
+    color:#fff;
+    font-size: 12px;
+    padding: 7px 0 3px;
+}
+
+/*スライドの矢印の設定*/
+
+/*戻る、次へ矢印の位置*/
+.slick-prev, 
+.slick-next {
+    position: absolute;/*絶対配置にする*/
+    top: 42%;
+    cursor: pointer;/*マウスカーソルを指マークに*/
+    outline: none;/*クリックをしたら出てくる枠線を消す*/
+    border-top: 2px solid #666;/*矢印の色*/
+    border-right: 2px solid #666;/*矢印の色*/
+    height: 15px;
+    width: 15px;
+}
+
+.slick-prev {/*戻る矢印の位置と形状*/
+    left: -4.5%;
+    transform: rotate(-135deg);
+}
+
+.slick-next {/*次へ矢印の位置と形状*/
+    right: -4.5%;
+    transform: rotate(45deg);
+}
+
+/*ドットナビゲーションの設定*/
+
+.slick-dots {
+    text-align:center;
+	margin:20px 0 0 0;
+}
+
+.slick-dots li {
+    display:inline-block;
+	margin:0 5px;
+}
+
+.slick-dots button {
+    color: transparent;
+    outline: none;
+    width:8px;/*ドットボタンのサイズ*/
+    height:8px;/*ドットボタンのサイズ*/
+    display:block;
+    border-radius:50%;
+    background:#ccc;/*ドットボタンの色*/
+}
+
+.slick-dots .slick-active button{
+    background:#333;/*ドットボタンの現在地表示の色*/
+}
