@@ -5,12 +5,15 @@ body{
 header{
     display: flex;
     justify-content: space-between;
-    margin-right:20px;
-    margin-left: 20px;
-    margin-top:10px;
+    padding-left: 1em;
+    padding-right:1em;
+    margin-right:0px;
+    margin-left: 0px;
+    margin-top:0px;
     margin-bottom:10px;
     align-items: center;
     border-bottom: 3px solid #000;
+    background-color: white;
 }
 
 b{

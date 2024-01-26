@@ -9,12 +9,15 @@ b{
 header{
     display: flex;
     justify-content: space-between;
-    margin-right:20px;
-    margin-left: 20px;
-    margin-top:10px;
+    padding-left: 1em;
+    padding-right:1em;
+    margin-right:0px;
+    margin-left: 0px;
+    margin-top:0px;
     margin-bottom:10px;
     align-items: center;
     border-bottom: 3px solid #000;
+    background-color: white;
 }
 
 header h1{
@@ -38,14 +41,15 @@ header nav ul li a:hover{
 
 .container{
     margin-top: 16px;
-    margin-right: 16px;
-    margin-bottom: 25px;
+    margin-right: 25px;
+    margin-bottom: 16px;
     margin-left: 25px;
 }
 
 .container h1{
     font-size:40px;
     font-weight:bold;
+    background-color: white;
 }
 
 .container .content{
@@ -53,6 +57,7 @@ header nav ul li a:hover{
     box-shadow: 0 0 3px 0 rgba(0,0,0,.25), 0 2px 3px 0 rgba(0,0,0,.25);
     border-radius: 10px;
     transition: .3s;
+    background: white;
 }
 .container .content:hover{
     box-shadow: 0 15px 30px -5px rgba(0,0,0,.25), 0 0 5px rgba(0,0,0,.25);
@@ -63,7 +68,9 @@ header nav ul li a:hover{
     margin-top:10px;
     font-size:27px;
     margin-left:25px;
+    margin-right:25px;
     font-weight: bold;
+    border-bottom: 3px solid rgb(11, 90, 104);
 }
 
 .container .content .article_date{
